@@ -12,5 +12,3 @@ applications:
     env:
        UAA_SERVER_URL: https://ec2d8973-71b0-4c67-a3de-20d2773ea2a6.predix-uaa.run.aws-usw02-pr.ice.predix.io/ # change to your UAA instance url
        REDIS: redis-1
-       VIEWS_URI : https://predix-views.run.aws-usw02-pr.ice.predix.io
-       VIEW_INSTANCE : SFSU_view_instance

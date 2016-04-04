@@ -133,9 +133,9 @@ http
              location /api/view-service
             {
               proxy_set_header    Authorization   $user_token;
-              proxy_set_header    predix-zone-id   "<%= ENV["VIEW_INSTANCE"] %>";
+              proxy_set_header    predix-zone-id   "<%= ENV["SFSU_view_instance"] %>";
               rewrite             /api/view-service/(.*) /api/$1 break;
-              proxy_pass  "<%= ENV["VIEWS_URI"] %>";
+              proxy_pass  "<%= ENV["https://predix-views.run.aws-usw02-pr.ice.predix.io"] %>";
             }
         }
 
